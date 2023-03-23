@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    
+    <link rel="stylesheet" href="/videoPlayer.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper header">
+          <a href="#" class="header__image"><img src="/assets/logo.png" alt="logo" /></a>
+          <nav>
+            <ul class="header__links">
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Price</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li>
+                <span class="lang">
+                  <a href="#" class="link-active">en</a>
+                  <p>/</p>
+                  <a href="#">ru</a>
+                </span>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="header__burger" id="burger">
+            <a class="menu-icon" href="#"><img src="/assets/burger-menu.png" alt="menu-icon" /></a>
+          </div>
+        </div>
+        <section class="menu">
+          <div class="menu__wrapper">
+              <nav>
+                  <ul>
+                      <li><a href="#">Skills</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Video</a></li>
+                      <li><a href="#">Price</a></li>
+                      <li><a href="#">Contacts</a></li>
+                  </ul>
+              </nav>
+              <div class="menu__close" id="menu__close">
+                  <i class="fa-solid fa-xmark"></i>
+              </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <div class="wrapper-main">
+          <section class="section-hire">
+            <div class="wrapper hire-me">
+              <h1>Alexa Rise</h1>
+              <p class="hire-me__text">
+                Save sincere emotions, romantic feelings and happy moments of
+                life together with professional photographer Alexa Rise
+              </p>
+              <button class="hire-me__btn">Hire me</button>
+            </div>
+          </section>
+
+          <section class="section-skills">
+            <div class="wrapper skills">
+              <h2>Skills</h2>
+              <div class="skills__flex">
+                <div class="skills__flex-item">
+                  <img src="/assets/camera 1.png" alt="camera-icon" />
+                  <h3>Digital photography</h3>
+                  <p>High-quality photos in the studio and on the nature</p>
+                </div>
+                <div class="skills__flex-item">
+                  <img src="/assets/video 1.png" alt="video-icon" />
+                  <h3>Video shooting</h3>
+                  <p>Capture your moments so that they always stay with you</p>
+                </div>
+                <div class="skills__flex-item">
+                  <img src="/assets/image 1.png" alt="image-icon" />
+                  <h3>Retouch</h3>
+                  <p>I strive to make photography surpass reality</p>
+                </div>
+                <div class="skills__flex-item">
+                  <img src="/assets/mic 1.png" alt="mic-icon" />
+                  <h3>Audio</h3>
+                  <p>
+                    Professional sounds recording for video, advertising,
+                    portfolio
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-portfolio">
+            <div class="wrapper portfolio">
+              <h2>Portfolio</h2>
+              <div class="portfolio__btn-block">
+                <button class="portfolio__btn btn-active">Winter</button>
+                <button class="portfolio__btn">Spring</button>
+                <button class="portfolio__btn">Summer</button>
+                <button class="portfolio__btn">Autumn</button>
+              </div>
+              <div class="portfolio__grid-container">
+                <div class="portfolio__grid-elem">
+                  <img src="/assets/winter-1.png" alt="photo" />
+                </div>
+                <div class="portfolio__grid-elem">
+                  <img src="/assets/winter-2.png" alt="photo" />
+                </div>
+                <div class="portfolio__grid-elem">
+                  <img src="/assets/winter-3.png" alt="photo" />
+                </div>
+                <div class="portfolio__grid-elem">
+                  <img src="/assets/winter-4.png" alt="photo" />
+                </div>
+                <div class="portfolio__grid-elem">
+                  <img src="/assets/winter-5.png" alt="photo" />
+                </div>
+                <div class="portfolio__grid-elem">
+                  <img src="/assets/winter-6.png" alt="photo" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-video">
+            <div class="wrapper video">
+              <h2>Video</h2>
+              <div class="container-video show-controls">
+                <div class="wrapper-video">
+                  <div class="video-timeline">
+                    <div class="progress-area">
+                      <span>00:00</span>
+                      <div class="progress-bar">
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="video-controls">
+                    <li class="options left">
+                      <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
+                      <input type="range" min="0" max="1" step="any">
+                      <div class="video-timer">
+                        <p class="current-time">00:00</p>
+                        <p class="separator"> / </p>
+                        <p class="video-duration">00:00</p>
+                      </div>
+                    </li>
+                    <li class="options center">
+                      <button class="skip-backward"><i class="fas fa-backward"></i></button>
+                      <button class="play-pause"><i class="fas fa-play"></i></button>
+                      <button class="skip-forward"><i class="fas fa-forward"></i></button>
+                    </li>
+                    <li class="options right">
+                      <div class="playback-content">
+                        <button class="playback-speed">
+                          <span class="material-symbols-rounded">slow_motion_video</span>
+                        </button>
+                        <ul class="speed-options">
+                          <li data-speed="2">2x</li>
+                          <li data-speed="1.5">1.5x</li>
+                          <li data-speed="1" class="active">Normal</li>
+                          <li data-speed="0.75">0.75x</li>
+                          <li data-speed="0.5">0.5x</li>
+                        </ul>
+                      </div>
+                      <button class="pic-in-pic">
+                        <span class="material-icons">picture_in_picture_alt</span>
+                      </button>
+                      <button class="fullscreen"><i class="fa-solid fa-expand"></i></button>
+                    </li>
+                  </ul>
+                </div>
+                <video src="/assets/Video service. Commercial Promo Video for Photo Studio.mp4"></video>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-price">
+            <div class="wrapper price">
+              <h2>Price</h2>
+              <div class="price__grid-container">
+                <div class="price__grid-elem">
+                  <h3>Standard</h3>
+                  <p class="price__dollar">500 $</p>
+                  <span class="price__text">
+                    <p>One location</p>
+                    <p>120 photos in color</p>
+                    <p>12 photos in retouch</p>
+                    <p>Readiness 2-3 weeks</p>
+                    <p>Make up, visage</p>
+                  </span>
+                  <button class="price__btn">Order shooting</button>
+                </div>
+                <div class="price__grid-elem">
+                  <h3>Premium</h3>
+                  <p class="price__dollar">700 $</p>
+                  <span class="price__text">
+                    <p>One or two locations</p>
+                    <p>200 photos in color</p>
+                    <p>20 photos in retouch</p>
+                    <p>Readiness 1-2 weeks</p>
+                    <p>Make up, visage</p>
+                  </span>
+                  <button class="price__btn">Order shooting</button>
+                </div>
+                <div class="price__grid-elem">
+                  <h3>Gold</h3>
+                  <p class="price__dollar">1000 $</p>
+                  <span class="price__text">
+                    <p>Three locations or more</p>
+                    <p>300 photos in color</p>
+                    <p>50 photos in retouch</p>
+                    <p>Readiness 1 week</p>
+                    <p>Make up, visage, hairstyle</p>
+                  </span>
+                  <button class="price__btn">Order shooting</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-contact">
+            <div class="wrapper contact">
+              <div class="contact__contact-me">
+                <h2>Contact me</h2>
+                <form class="contact__form" action="#">
+                  <div class="form__email">
+                    <input class="email" type="email" required value="E-mail" />
+                  </div>
+                  <div class="form__phone">
+                    <input class="phone" type="tel" required value="Phone" />
+                  </div>
+                  <div class="form__message">
+                    <input
+                      class="message"
+                      type="text"
+                      required
+                      value="Message"
+                    />
+                  </div>
+                  <button class="contact__btn" id="contact-btn">Send message</button>                
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="wrapper footer">
+          <div class="footer__github">
+            <p>&copy;</p>
+            <p>2022</p>
+            <a href="#">github</a>
+          </div>
+          <h3>Rolling Scopes School</h3>
+          <div class="footer__media-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/videoPlayer.js"></script>
+</html>

@@ -14,6 +14,9 @@ videoTimeline = containerVid.querySelector(".video-timeline"),
 currentVidTime = containerVid.querySelector(".current-time"),
 videoDuration = containerVid.querySelector(".video-duration");
 let timer;
+const photoOfVideo = containerVid.querySelector(".photo-of-video"),
+playButton = containerVid.querySelector(".play-button"),
+playButtonImg = containerVid.querySelector(".play-button img");
 const portfolioBtnAll = document.querySelectorAll(".portfolio__btn"),
 portfolioImgAll = document.querySelectorAll(".portfolio__grid-elem img"),
 burgerBtn = document.getElementById("burger"),
@@ -46,11 +49,29 @@ playPauseBtn.addEventListener('click', () => {
 
 mainVideo.addEventListener("play", () => {
     playPauseBtn.classList.replace("fa-play", "fa-pause");
+    photoOfVideo.style.zIndex = -3;
+    playButton.style.zIndex = -1;
 });
 
 mainVideo.addEventListener("pause", () => {
     playPauseBtn.classList.replace("fa-pause", "fa-play");
+    playButton.style.zIndex = 2;
 });
+playButtonImg.addEventListener("mouseenter", () => {
+    playButtonImg.src = "/assets/Play_hover.png";
+});
+playButtonImg.addEventListener("mouseleave", () => {
+    playButtonImg.src = "/assets/Play_Unvisited.png";
+});
+playButtonImg.addEventListener("click", ()=>{
+    mainVideo.paused ? mainVideo.play() : mainVideo.pause();
+});
+mainVideo.addEventListener("click", ()=>{
+    if (mainVideo.paused === false){
+        mainVideo.pause();
+    } 
+});
+
 
 //progressBar timeupdate
 mainVideo.addEventListener("timeupdate", e => {

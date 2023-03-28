@@ -71,6 +71,12 @@ mainVideo.addEventListener("click", ()=>{
         mainVideo.pause();
     } 
 });
+window.addEventListener("keydown", e => {
+    if (e.key === " "){
+        e.preventDefault();
+        mainVideo.paused ? mainVideo.play() : mainVideo.pause();
+    }
+})
 
 
 //progressBar timeupdate
@@ -149,7 +155,6 @@ fullScreenBtn.addEventListener("click", () => {
 videoTimeline.addEventListener("click", e => {
     let timelineWidth = videoTimeline.clientWidth;
     mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
-
 })
 
 //videoDuration = duration of mainVideo loadeddata 
